@@ -1,0 +1,49 @@
+# ============================================================
+# .gitignore — EdTech Platform (PathShala)
+# ============================================================
+
+# --- Environment Variables (NEVER COMMIT) ---
+.env
+.env.local
+.env.*.local
+*.env
+
+# --- Node / Frontend ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+*.log
+npm-debug.log*
+
+# --- Python / Backend ---
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+*.pyc
+*.pyo
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Alembic ---
+# Keep alembic/versions/ tracked — migration files should be committed
+backend/alembic/alembic.ini
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Build artifacts ---
+build/
+dist/
+*.egg-info/
