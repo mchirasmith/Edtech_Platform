@@ -24,7 +24,7 @@ const MOCK_DOUBTS = [
 ];
 
 export default function TeacherDashboard() {
-    const name = "Dr. Priya"; // Replaced with useUser() in SPEC-02
+    const name = "Dr. Sehrish"; // Replaced with useUser() in SPEC-02
 
     return (
         <div className="dashboard-layout">
