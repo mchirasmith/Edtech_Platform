@@ -1,14 +1,8 @@
-"""
-Models package — SQLAlchemy ORM models.
-
-All models import Base from app.database and are auto-discovered by Alembic.
-Models to build (per SPEC-03 Database Schema):
-  - course.py           Course, Lesson
-  - user.py             (Clerk-managed; use clerk_id string here)
-  - enrollment.py       Enrollment
-  - batch.py            Batch
-  - test.py             Test, Question, TestAttempt
-  - doubt.py            DoubtMessage
-  - bookmark.py         Bookmark
-  - notification.py     Notification
-"""
+# Import all models so Alembic auto-discovers every table via Base.metadata.
+from app.models.course import Course  # noqa: F401
+from app.models.lesson import Lesson  # noqa: F401
+from app.models.batch import Batch, BatchCourseLink  # noqa: F401
+from app.models.enrollment import Enrollment  # noqa: F401
+from app.models.progress import LessonProgress  # noqa: F401
+from app.models.doubt import DoubtMessage  # noqa: F401
+from app.models.test import TestQuestion, TestAttempt, Bookmark  # noqa: F401
